@@ -8,17 +8,19 @@ The package simply builds off of the [Realtek Ameba Arduino](http://www.amebaiot
 
 Add:
 ```
-https://github.com/gtalusan/PADIIoTStamp/raw/master/release/package_padiiotstamp_index.json
+https://raw.githubusercontent.com/pfeerick/PADIIoTStamp/windows/release/package_padiiotstamp_index.json
 ```
 to your Arduino IDE and install the padiiotstamp package.
 
-Install OpenOCD.  The `platform.txt` assumes it lives in `/usr/local/bin`.
+Install OpenOCD.  For Windows, [binaries are available here](http://gnutoolchains.com/arm-eabi/openocd/). Versions later than `OpenOCD 0.10.0 [2017-08-21]` DO NOT work. The `platform.txt` assumes you have installed it to `C:\Program Files\OpenOCD`.
 
-The `platform.txt` contains a menu to configure OpenOCD via the Arduino's Tools menu.  If you don't see your OpenOCD compatible device in the drop down, you likely need to add a new menu item.
+On linux, the `platform.txt` assumes it lives in `/usr/local/bin`
+
+The `platform.txt` contains a menu to configure OpenOCD via the Arduino's Tools menu.  If you don't see your OpenOCD compatible device in the drop down, you likely need to add a new menu item. For the pine64 JLink board, you can either modify the `interface/jlink.cfg` file and add `transport select swd`, or copy the file to jlink-swd.txt and adding `transport select swd` there, and uncommentting  the `JLink (SWD)` option in boards.txt to add another OpenOCD upload option.
 
 I accept patches.
 
-NOTE: this has only been tested on `macOS Sierra`.  Buyer beware.
+NOTE: The original version of this fork was tested by George Talusan (gtalusan) to work on `macOS Sierra`. I have tested this to work on Windows 10 (1809) using Arduino IDE 1.8.7 using OpenOCD 0.10.0 [2017-08-21] and a pine64 SWD Debugger. Buyer beware.
 
 # Usage
 
