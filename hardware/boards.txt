@@ -24,6 +24,9 @@ padiiotstamp.menu.OpenOCD.buspirate.build.openocdcfg=buspirate.cfg
 padiiotstamp.menu.OpenOCD.jlink=JLink
 padiiotstamp.menu.OpenOCD.jlink.build.openocdcfg=jlink.cfg
 
+#padiiotstamp.menu.OpenOCD.jlink=JLink (SWD)
+#padiiotstamp.menu.OpenOCD.jlink.build.openocdcfg=jlink-swd.cfg
+
 padiiotstamp.menu.OpenOCD.stlinkv1=STLink V1
 padiiotstamp.menu.OpenOCD.stlinkv1.build.openocdcfg=stlink-v1.cfg
 
