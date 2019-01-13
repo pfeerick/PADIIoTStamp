@@ -1,3 +1,12 @@
-tools.openocd_tools.upload.params.verbose=
-tools.openocd_tools.upload.params.quiet=
-tools.openocd_tools.upload.pattern="/usr/local/bin/openocd" -f interface/{build.openocdcfg} -f {runtime.tools.openocd_tools.path}/rtl8710.ocd -c "init" -c "reset halt" -c "rtl8710_flash_auto_erase 1" -c "rtl8710_flash_auto_verify 1" -c "rtl8710_flash_write {runtime.tools.ameba_tools.path}/ram_all.bin 0" -c "reset" -c "shutdown"
+name=pine64 RTL8710 Boards
+version=0.0.5
+
+tools.openocd_tools.path=/usr/local
+tools.openocd_tools.path.windows=C:\Program Files\OpenOCD
+tools.openocd_tools.cmd=bin/openocd
+tools.openocd_tools.cmd.windows=bin/openocd.exe
+
+tools.openocd_tools.upload.params.verbose=-d2
+tools.openocd_tools.upload.params.quiet=-d0
+tools.openocd_tools.upload.pattern="{path}/{cmd}" -f interface/{build.openocdcfg} -f {runtime.tools.openocd_tools.path}/rtl8710.ocd -c "init" -c "reset halt" -c "rtl8710_flash_auto_erase 1" -c "rtl8710_flash_auto_verify 1" -c "rtl8710_flash_write {{runtime.tools.ameba_tools.path}/ram_all.bin} 0" -c "reset" -c "shutdown"
+tools.openocd_tools.upload.pattern.windows="{path}\{cmd}" {upload.verbose} -s "{path}\share\openocd\scripts" -f "interface\{build.openocdcfg}" -f "{runtime.tools.openocd_tools.path}\rtl8710.ocd" -c "init" -c "reset halt" -c "rtl8710_flash_auto_erase 1" -c "rtl8710_flash_auto_verify 1" -c "rtl8710_flash_write {{runtime.tools.ameba_tools.path}\ram_all.bin} 0" -c "reset" -c "shutdown"
