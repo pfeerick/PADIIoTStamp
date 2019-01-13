@@ -16,7 +16,7 @@ Install OpenOCD.  For Windows, [binaries are available here](http://gnutoolchain
 
 On linux, the `platform.txt` assumes it lives in `/usr/local/bin`
 
-The `platform.txt` contains a menu to configure OpenOCD via the Arduino's Tools menu.  If you don't see your OpenOCD compatible device in the drop down, you likely need to add a new menu item. For the pine64 SWD Debugger board, you can either modify the `interface/jlink.cfg` file and add `transport select swd`, or copy the file to jlink-swd.txt and adding `transport select swd` there, and add the below entries for a `JLink (SWD)` option in boards.local.txt to add another OpenOCD upload option.
+The `platform.txt` contains a menu to configure OpenOCD via the Arduino's Tools menu.  If you don't see your OpenOCD compatible device in the drop down, you likely need to add a new menu item. For the pine64 SWD Debugger board, you can either modify the `interface/jlink.cfg` file and add `transport select swd`, or copy the file to jlink-swd.txt and adding `transport select swd` there, and add the below entries for a `JLink (SWD)` option in `boards.local.txt` to add another OpenOCD upload option.
 
 ```
 padiiotstamp.menu.OpenOCD.jlink=JLink (SWD)
