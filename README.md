@@ -25,7 +25,7 @@ padiiotstamp.menu.OpenOCD.jlink.build.openocdcfg=jlink-swd.cfg
 
 NOTE: The original version of this fork was tested by George Talusan (gtalusan) to work on `macOS Sierra`. I have tested this to work on Windows 10 (1809) using Arduino IDE 1.8.7 using OpenOCD 0.10.0 [2017-08-21] and a pine64 SWD Debugger. It is also working on Linux x64 (Ubuntu 18.10) using openocd 0.10 as distributed in the Ubuntu repos. 
 
-If you find any problems, or suggestions on improvements, I accept patches.
+If you find any problems, or suggestions on improvements, I accept pull requests.
 
 # Usage
 
