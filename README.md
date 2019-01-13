@@ -12,9 +12,9 @@ https://raw.githubusercontent.com/pfeerick/PADIIoTStamp/windows/release/package_
 ```
 to your Arduino IDE and install the padiiotstamp package.
 
-Install OpenOCD.  For Windows, [binaries are available here](http://gnutoolchains.com/arm-eabi/openocd/). Versions later than `OpenOCD 0.10.0 [2017-08-21]` DO NOT work. The `platform.txt` assumes you have installed it to `C:\Program Files\OpenOCD`.
+Install OpenOCD.  For Windows, [binaries are available here](http://gnutoolchains.com/arm-eabi/openocd/). Versions later than `OpenOCD 0.10.0 [2017-08-21]` DO NOT work. The `platform.txt` assumes you have installed it to `C:\Program Files\OpenOCD`. If you have installed it elsewhere, create a `platforms.local.txt` to override `tools.openocd_tools.path.windows`.
 
-On linux, the `platform.txt` assumes it lives in `/usr/local/bin`
+On linux, the `platform.txt` assumes it lives in `/usr/bin`. If you have installed it elsewhere, create a `platforms.local.txt`, and override `tools.openocd_tools.path`.
 
 The `platform.txt` contains a menu to configure OpenOCD via the Arduino's Tools menu.  If you don't see your OpenOCD compatible device in the drop down, you likely need to add a new menu item. For the pine64 SWD Debugger board, you can either modify the `interface/jlink.cfg` file and add `transport select swd`, or copy the file to jlink-swd.txt and adding `transport select swd` there, and add the below entries for a `JLink (SWD)` option in `boards.local.txt` to add another OpenOCD upload option.
 
@@ -23,9 +23,9 @@ padiiotstamp.menu.OpenOCD.jlink=JLink (SWD)
 padiiotstamp.menu.OpenOCD.jlink.build.openocdcfg=jlink-swd.cfg
 ```
 
-I accept patches.
+NOTE: The original version of this fork was tested by George Talusan (gtalusan) to work on `macOS Sierra`. I have tested this to work on Windows 10 (1809) using Arduino IDE 1.8.7 using OpenOCD 0.10.0 [2017-08-21] and a pine64 SWD Debugger. It is also working on Linux x64 (Ubuntu 18.10) using openocd 0.10 as distributed in the Ubuntu repos. 
 
-NOTE: The original version of this fork was tested by George Talusan (gtalusan) to work on `macOS Sierra`. I have tested this to work on Windows 10 (1809) using Arduino IDE 1.8.7 using OpenOCD 0.10.0 [2017-08-21] and a pine64 SWD Debugger. Buyer beware.
+If you find any problems, or suggestions on improvements, I accept patches.
 
 # Usage
 
