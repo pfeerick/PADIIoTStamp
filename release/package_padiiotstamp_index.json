@@ -2,22 +2,22 @@
   "packages": [
     {
       "name": "padiiotstamp",
-      "maintainer": "george.talusan@gmail.com",
-      "websiteURL": "https://www.github.com/gtalusan/PADIIoTStamp",
-      "email": "george.talusan@gmail.com",
+      "maintainer": "Peter Feerick",
+      "websiteURL": "https://github.com/pfeerick/PADIIoTStamp",
+      "email": "peter.feerick@gmail.com",
       "platforms": [
         {
           "name": "PADI IoT Stamp (32-bits ARM Cortex-M3)",
           "architecture": "ameba",
-          "version": "0.0.4",
+          "version": "0.0.5",
           "category": "Contributed",
           "help": {
-            "online": "http://www.github.com/gtalusan/PADIIoTStamp/"
+            "online": "https://github.com/pfeerick/PADIIoTStamp"
           },
-          "url": "https://github.com/gtalusan/PADIIoTStamp/raw/master/release/padiiotstamp-0.0.4.tar.gz",
-          "archiveFileName": "padiiotstamp-0.0.4.tar.gz",
-          "checksum": "SHA-256:50afdb760d332420ccff298bb04c82c56aff7b35849de74c4be972dc68b152c6",
-          "size": "793",
+          "url": "https://github.com/pfeerick/PADIIoTStamp/releases/downloads/0.0.5/padiiotstamp-0.0.5.tar.gz",
+          "archiveFileName": "padiiotstamp-0.0.5.tar.gz",
+          "checksum": "SHA-256:fa61ab2ae4e1c6916ba095be3c6291ef2b9783da9fbb98cbf3a6f8fc1b2fd701",
+          "size": "921",
           "boards": [
             {"name": "PADI IoT Stamp"}
           ],
@@ -35,7 +35,7 @@
             {
               "packager": "realtek",
               "name": "ameba_tools",
-              "version": "1.0.8"
+              "version": "1.1.0"
             }
           ]
         }
@@ -48,14 +48,14 @@
             {
               "host": "i686-mingw32",
               "archiveFileName": "openocd_tools-0.0.1.tar.gz",
-              "url": "https://github.com/gtalusan/PADIIoTStamp/raw/master/release/openocd_tools-0.0.1.tar.gz",
+              "url": "https://github.com/pfeerick/PADIIoTStamp/releases/downloads/0.0.5/openocd_tools-0.0.1.tar.gz",
               "checksum": "SHA-256:69b05f075118c39f26281e15055ae0d0cd64b188daeca724386bf9fb7dcaf3e7",
               "size": "11572"
             },
             {
               "host": "x86_64-apple-darwin",
               "archiveFileName": "openocd_tools-0.0.1.tar.gz",
-              "url": "https://github.com/gtalusan/PADIIoTStamp/raw/master/release/openocd_tools-0.0.1.tar.gz",
+              "url": "https://github.com/pfeerick/PADIIoTStamp/releases/downloads/0.0.5/openocd_tools-0.0.1.tar.gz",
               "checksum": "SHA-256:69b05f075118c39f26281e15055ae0d0cd64b188daeca724386bf9fb7dcaf3e7",
               "size": "11572"
             }
