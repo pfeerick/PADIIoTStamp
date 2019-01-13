@@ -1,7 +1,7 @@
 name=pine64 RTL8710 Boards
 version=0.0.5
 
-tools.openocd_tools.path=/usr/local
+tools.openocd_tools.path=/usr
 tools.openocd_tools.path.windows=C:\Program Files\OpenOCD
 tools.openocd_tools.cmd=bin/openocd
 tools.openocd_tools.cmd.windows=bin/openocd.exe
