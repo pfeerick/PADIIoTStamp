@@ -38,6 +38,39 @@
               "version": "1.1.0"
             }
           ]
+        },
+        {
+          "name": "PADI IoT Stamp (32-bits ARM Cortex-M3)",
+          "architecture": "ameba",
+          "version": "0.0.6",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/pfeerick/PADIIoTStamp"
+          },
+          "url": "https://github.com/pfeerick/PADIIoTStamp/releases/download/0.0.6/padiiotstamp-0.0.6.tar.gz",
+          "archiveFileName": "padiiotstamp-0.0.6.tar.gz",
+          "checksum": "SHA-256:72c7774ef06aa9c4680e3c8609453172696cce28ca73f1e82effcedd8c52487d",
+          "size": "921",
+          "boards": [
+            {"name": "PADI IoT Stamp"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "padiiotstamp",
+              "name": "openocd_tools",
+              "version": "0.0.1"
+            },
+            {
+              "packager": "realtek",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "realtek",
+              "name": "ameba_tools",
+              "version": "1.1.0"
+            }
+          ]
         }
       ],
       "tools": [
