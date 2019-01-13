@@ -12,13 +12,13 @@ https://github.com/gtalusan/PADIIoTStamp/raw/master/release/package_padiiotstamp
 ```
 to your Arduino IDE and install the padiiotstamp package.
 
-Install OpenOCD.  The `platform.txt` assumes it lives in `/usr/local/bin`.
+Install OpenOCD.  The `platform.txt` assumes it lives in `/usr/bin`.
 
 The `platform.txt` contains a menu to configure OpenOCD via the Arduino's Tools menu.  If you don't see your OpenOCD compatible device in the drop down, you likely need to add a new menu item.
 
 I accept patches.
 
-NOTE: this has only been tested on `macOS Sierra`.  Buyer beware.
+NOTE: The original version of this fork was tested by George Talusan (gtalusan) to work on `macOS Sierra`. I currently have it working on Linux x64 (Ubuntu 18.10) using openocd 0.10 as distribted in the repos. Buyer beware. 
 
 # Usage
 
