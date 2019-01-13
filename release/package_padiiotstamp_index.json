@@ -14,7 +14,7 @@
           "help": {
             "online": "https://github.com/pfeerick/PADIIoTStamp"
           },
-          "url": "https://github.com/pfeerick/PADIIoTStamp/releases/downloads/0.0.5/padiiotstamp-0.0.5.tar.gz",
+          "url": "https://github.com/pfeerick/PADIIoTStamp/releases/download/0.0.5/padiiotstamp-0.0.5.tar.gz",
           "archiveFileName": "padiiotstamp-0.0.5.tar.gz",
           "checksum": "SHA-256:fa61ab2ae4e1c6916ba095be3c6291ef2b9783da9fbb98cbf3a6f8fc1b2fd701",
           "size": "921",
@@ -48,14 +48,14 @@
             {
               "host": "i686-mingw32",
               "archiveFileName": "openocd_tools-0.0.1.tar.gz",
-              "url": "https://github.com/pfeerick/PADIIoTStamp/releases/downloads/0.0.5/openocd_tools-0.0.1.tar.gz",
+              "url": "https://github.com/pfeerick/PADIIoTStamp/releases/download/0.0.5/openocd_tools-0.0.1.tar.gz",
               "checksum": "SHA-256:69b05f075118c39f26281e15055ae0d0cd64b188daeca724386bf9fb7dcaf3e7",
               "size": "11572"
             },
             {
               "host": "x86_64-apple-darwin",
               "archiveFileName": "openocd_tools-0.0.1.tar.gz",
-              "url": "https://github.com/pfeerick/PADIIoTStamp/releases/downloads/0.0.5/openocd_tools-0.0.1.tar.gz",
+              "url": "https://github.com/pfeerick/PADIIoTStamp/releases/download/0.0.5/openocd_tools-0.0.1.tar.gz",
               "checksum": "SHA-256:69b05f075118c39f26281e15055ae0d0cd64b188daeca724386bf9fb7dcaf3e7",
               "size": "11572"
             }
